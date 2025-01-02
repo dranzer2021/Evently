@@ -1,0 +1,108 @@
+.calendar {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1.5px solid #420147;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0.5em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 0.5em;
+    color: rgb(1, 1, 11);
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header button {
+    background: rgb(1, 124, 155);
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-size: 1em;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.day-names,
+.days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.day-name,
+.day,
+.empty-day {
+    width: 14.28%;
+    padding: 10px;
+    /* border: 1px solid rgb(11, 211, 242); */
+    border: 1px solid rgb(11, 211, 242);
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 0.8em;
+    opacity: 0.7;
+    border-radius: 2.5px;
+}
+
+.day-name {
+    background-color: rgb(238, 239, 239);
+    /* color: white; */
+    font-weight: bold;
+    opacity: 0.8;
+    margin-bottom: 8px;
+}
+
+.day {
+    border: 2px solid white;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.day:hover {
+    background-color: #ccc;
+}
+
+.empty-day {
+    border: 2px solid white;
+    background-color: #f9f9f9;
+}
+
+.today {
+    /* background-color: skyblue; */
+    background-color: rgb(7, 160, 220);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.selected {
+    /* background-color: skyblue; */
+    background-color: rgb(7, 160, 220);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .day-name {
+        font-size: .6em;
+        font-weight: 600;
+        padding: 0.8em 0.1em;
+    }
+
+    .day {
+        font-size: 0.8em;
+        font-weight: 800;
+    }
+}
